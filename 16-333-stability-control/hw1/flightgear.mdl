@@ -1,0 +1,1894 @@
+Model {
+  Name			  "flightgear"
+  Version		  7.8
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.21"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Created		  "Tue Feb 28 15:36:36 2012"
+  Creator		  "Dan"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Dan"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Feb 29 19:17:43 2012"
+  RTWModifiedTimeStamp	  252443792
+  ModelVersionFormat	  "1.%<AutoIncrement:21>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    1
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "flightgear"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "flightgear"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      2
+      Version		      "1.11.1"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  3
+	  Version		  "1.11.1"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  4
+	  Version		  "1.11.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  5
+	  Version		  "1.11.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  AccelParallelForEachSubsystem	on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  6
+	  Version		  "1.11.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  7
+	  Version		  "1.11.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  8
+	  Version		  "1.11.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  9
+	  Version		  "1.11.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  10
+	  Version		  "1.11.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  GenerateCodeMetricsReport off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      11
+	      Version		      "1.11.1"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      12
+	      Version		      "1.11.1"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  13
+	  Version		  "1.11.1"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 200, 197, 1080, 827 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    2
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "flightgear"
+    Location		    [287, 230, 828, 578]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "91"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Flight Gear"
+      SID		      "2"
+      Ports		      [1]
+      Position		      [280, 58, 360, 102]
+      LibraryVersion	      "1.225"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Flight Gear"
+	Location		[150, 264, 770, 646]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "FlightGear Data"
+	  SID			  "3"
+	  Position		  [105, 148, 135, 162]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "88"
+	  Position		  [155, 265, 185, 295]
+	  ZOrder		  -4
+	  Value			  "2000"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "87"
+	  Ports			  [1, 6]
+	  Position		  [180, 100, 185, 210]
+	  ZOrder		  -6
+	  ShowName		  off
+	  Outputs		  "6"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "90"
+	  Position		  [205, 90, 235, 120]
+	  ZOrder		  -8
+	  Gain			  "0.001"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  SID			  "91"
+	  Position		  [255, 110, 285, 140]
+	  ZOrder		  -8
+	  Gain			  "0.001"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "89"
+	  Ports			  [2, 1]
+	  Position		  [230, 135, 250, 155]
+	  ZOrder		  -18
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "toFlightGear"
+	  SID			  "15"
+	  Ports			  [6]
+	  Position		  [310, 91, 445, 219]
+	  ZOrder		  -7
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "toFlightGear"
+	    Location		    [2, 82, 1261, 971]
+	    Open		    on
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "x"
+	      SID		      "81"
+	      Position		      [775, 33, 805, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "y"
+	      SID		      "82"
+	      Position		      [730, 18, 760, 32]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "z"
+	      SID		      "80"
+	      Position		      [405, 48, 435, 62]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "phi"
+	      SID		      "83"
+	      Position		      [650, 63, 680, 77]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "theta"
+	      SID		      "84"
+	      Position		      [595, 78, 625, 92]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "psi"
+	      SID		      "85"
+	      Position		      [685, 93, 715, 107]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground1"
+	      SID		      "18"
+	      Position		      [740, 107, 755, 123]
+	      ZOrder		      -16
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground10"
+	      SID		      "19"
+	      Position		      [845, 677, 860, 693]
+	      ZOrder		      -17
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground11"
+	      SID		      "20"
+	      Position		      [760, 692, 775, 708]
+	      ZOrder		      -38
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground12"
+	      SID		      "21"
+	      Position		      [760, 722, 775, 738]
+	      ZOrder		      -38
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground13"
+	      SID		      "22"
+	      Position		      [760, 797, 775, 813]
+	      ZOrder		      -38
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground14"
+	      SID		      "23"
+	      Position		      [735, 332, 750, 348]
+	      ZOrder		      -18
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground15"
+	      SID		      "24"
+	      Position		      [760, 347, 775, 363]
+	      ZOrder		      -19
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground16"
+	      SID		      "25"
+	      Position		      [760, 212, 775, 228]
+	      ZOrder		      -20
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground17"
+	      SID		      "26"
+	      Position		      [710, 227, 725, 243]
+	      ZOrder		      -21
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground18"
+	      SID		      "27"
+	      Position		      [735, 242, 750, 258]
+	      ZOrder		      -22
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground19"
+	      SID		      "28"
+	      Position		      [760, 257, 775, 273]
+	      ZOrder		      -23
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground2"
+	      SID		      "29"
+	      Position		      [770, 122, 785, 138]
+	      ZOrder		      -24
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground20"
+	      SID		      "30"
+	      Position		      [710, 272, 725, 288]
+	      ZOrder		      -25
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground21"
+	      SID		      "31"
+	      Position		      [735, 287, 750, 303]
+	      ZOrder		      -26
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground22"
+	      SID		      "32"
+	      Position		      [760, 302, 775, 318]
+	      ZOrder		      -27
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground23"
+	      SID		      "33"
+	      Position		      [710, 317, 725, 333]
+	      ZOrder		      -28
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground24"
+	      SID		      "34"
+	      Position		      [760, 527, 775, 543]
+	      ZOrder		      -38
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground25"
+	      SID		      "35"
+	      Position		      [820, 542, 835, 558]
+	      ZOrder		      -29
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground26"
+	      SID		      "36"
+	      Position		      [780, 512, 795, 528]
+	      ZOrder		      -38
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground27"
+	      SID		      "37"
+	      Position		      [750, 497, 765, 513]
+	      ZOrder		      -38
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground28"
+	      SID		      "38"
+	      Position		      [795, 767, 810, 783]
+	      ZOrder		      -30
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground29"
+	      SID		      "39"
+	      Position		      [710, 437, 725, 453]
+	      ZOrder		      -33
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground3"
+	      SID		      "40"
+	      Position		      [735, 362, 750, 378]
+	      ZOrder		      -31
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground30"
+	      SID		      "41"
+	      Position		      [735, 452, 750, 468]
+	      ZOrder		      -43
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground31"
+	      SID		      "42"
+	      Position		      [760, 422, 775, 438]
+	      ZOrder		      -33
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground32"
+	      SID		      "43"
+	      Position		      [845, 467, 860, 483]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground33"
+	      SID		      "44"
+	      Position		      [845, 737, 860, 753]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground34"
+	      SID		      "45"
+	      Position		      [820, 752, 835, 768]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground35"
+	      SID		      "46"
+	      Position		      [820, 782, 835, 798]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground36"
+	      SID		      "47"
+	      Position		      [845, 557, 860, 573]
+	      ZOrder		      -32
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground37"
+	      SID		      "48"
+	      Position		      [820, 812, 835, 828]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground38"
+	      SID		      "49"
+	      Position		      [795, 827, 810, 843]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground39"
+	      SID		      "50"
+	      Position		      [820, 842, 835, 858]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground4"
+	      SID		      "51"
+	      Position		      [710, 392, 725, 408]
+	      ZOrder		      -33
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground40"
+	      SID		      "52"
+	      Position		      [845, 377, 860, 393]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground41"
+	      SID		      "53"
+	      Position		      [795, 572, 810, 588]
+	      ZOrder		      -34
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground42"
+	      SID		      "54"
+	      Position		      [820, 587, 835, 603]
+	      ZOrder		      -35
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground43"
+	      SID		      "55"
+	      Position		      [845, 602, 860, 618]
+	      ZOrder		      -36
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground44"
+	      SID		      "56"
+	      Position		      [795, 617, 810, 633]
+	      ZOrder		      -37
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground45"
+	      SID		      "57"
+	      Position		      [845, 197, 860, 213]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground46"
+	      SID		      "58"
+	      Position		      [820, 707, 835, 723]
+	      ZOrder		      -38
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground47"
+	      SID		      "59"
+	      Position		      [870, 182, 885, 198]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground48"
+	      SID		      "60"
+	      Position		      [845, 167, 860, 183]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground49"
+	      SID		      "61"
+	      Position		      [870, 152, 885, 168]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground5"
+	      SID		      "62"
+	      Position		      [820, 632, 835, 648]
+	      ZOrder		      -39
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground50"
+	      SID		      "63"
+	      Position		      [845, 137, 860, 153]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground6"
+	      SID		      "64"
+	      Position		      [845, 647, 860, 663]
+	      ZOrder		      -40
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground7"
+	      SID		      "65"
+	      Position		      [820, 662, 835, 678]
+	      ZOrder		      -41
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground8"
+	      SID		      "66"
+	      Position		      [820, 482, 835, 498]
+	      ZOrder		      -42
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      "Ground9"
+	      SID		      "67"
+	      Position		      [735, 407, 750, 423]
+	      ZOrder		      -43
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      SID		      "68"
+	      Ports		      [56, 1]
+	      Position		      [950, 20, 1095, 855]
+	      ZOrder		      -45
+	      AttributesFormatString  "FG VERSION: %<FlightGearVersion>"
+	      LibraryVersion	      "1.162"
+	      SourceBlock	      "aerolibfltsims/Pack\nnet_fdm Packet\nfor FlightGear"
+	      SourceType	      "FlightGearPackNetFdm"
+	      FlightGearVersion	      "v2.0"
+	      ShowPositionAttitudeInputs on
+	      ShowVelocityAccelerationInputs on
+	      ShowControlSurfacePositionInputs on
+	      ShowEngineFuelInputs    on
+	      ShowLandingGearInputs   on
+	      ShowEnvironmentInputs   on
+	      SampleTime	      "1/30"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Send\nnet_fdm Packet\nto FlightGear"
+	      SID		      "69"
+	      Ports		      [1]
+	      Position		      [1145, 412, 1220, 468]
+	      ZOrder		      -46
+	      LibraryVersion	      "1.162"
+	      SourceBlock	      "aerolibfltsims/Send\nnet_fdm Packet\nto FlightGear"
+	      SourceType	      "FlightGearSendNetFdm"
+	      DestinationIpAddress    "127.0.0.1"
+	      DestinationPort	      "5502"
+	      LocalIpPort	      "-1"
+	      varLen		      off
+	      SampleTime	      "1/30"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Simulation Pace"
+	      SID		      "70"
+	      Ports		      []
+	      Position		      [1155, 325, 1216, 370]
+	      ZOrder		      -47
+	      AttributesFormatString  "%<SimulationPace> sec/sec"
+	      LibraryVersion	      "1.72"
+	      SourceBlock	      "aerolibanimutils/Simulation Pace"
+	      SourceType	      "Simulation Pace"
+	      SimulationPace	      "1"
+	      SleepMode		      "MATLAB Thread"
+	      OutputPaceError	      off
+	      SampleTime	      "0.001"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "cast1"
+	      SID		      "71"
+	      Position		      [805, 60, 845, 80]
+	      ZOrder		      -57
+	      ShowName		      off
+	      OutDataTypeStr	      "single"
+	      RndMeth		      "Floor"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "cast2"
+	      SID		      "72"
+	      Position		      [875, 75, 915, 95]
+	      ZOrder		      -57
+	      ShowName		      off
+	      OutDataTypeStr	      "single"
+	      RndMeth		      "Floor"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "cast3"
+	      SID		      "73"
+	      Position		      [805, 90, 845, 110]
+	      ZOrder		      -57
+	      ShowName		      off
+	      OutDataTypeStr	      "single"
+	      RndMeth		      "Floor"
+	    }
+	    Line {
+	      SrcBlock		      "Ground16"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      14
+	    }
+	    Line {
+	      SrcBlock		      "Ground17"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      15
+	    }
+	    Line {
+	      SrcBlock		      "Ground18"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      16
+	    }
+	    Line {
+	      SrcBlock		      "Ground19"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      17
+	    }
+	    Line {
+	      SrcBlock		      "Ground20"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      18
+	    }
+	    Line {
+	      SrcBlock		      "Ground21"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      19
+	    }
+	    Line {
+	      SrcBlock		      "Ground22"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      20
+	    }
+	    Line {
+	      SrcBlock		      "Ground23"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      21
+	    }
+	    Line {
+	      SrcBlock		      "Ground14"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      22
+	    }
+	    Line {
+	      SrcBlock		      "Ground15"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      23
+	    }
+	    Line {
+	      SrcBlock		      "Ground24"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      35
+	    }
+	    Line {
+	      SrcBlock		      "Ground25"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      36
+	    }
+	    Line {
+	      SrcBlock		      "Ground36"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      37
+	    }
+	    Line {
+	      SrcBlock		      "Ground41"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      38
+	    }
+	    Line {
+	      SrcBlock		      "Ground42"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      39
+	    }
+	    Line {
+	      SrcBlock		      "Ground43"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      40
+	    }
+	    Line {
+	      SrcBlock		      "Ground44"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      41
+	    }
+	    Line {
+	      SrcBlock		      "Ground11"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      46
+	    }
+	    Line {
+	      SrcBlock		      "Ground46"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      47
+	    }
+	    Line {
+	      SrcBlock		      "Ground12"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      48
+	    }
+	    Line {
+	      SrcBlock		      "Ground28"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      51
+	    }
+	    Line {
+	      SrcBlock		      "Ground13"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      53
+	    }
+	    Line {
+	      SrcBlock		      "Ground1"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "Ground2"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "Ground3"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      24
+	    }
+	    Line {
+	      SrcBlock		      "Ground5"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      42
+	    }
+	    Line {
+	      SrcBlock		      "Ground6"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      43
+	    }
+	    Line {
+	      SrcBlock		      "Ground7"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      44
+	    }
+	    Line {
+	      SrcBlock		      "Ground4"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      26
+	    }
+	    Line {
+	      SrcBlock		      "Ground8"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      32
+	    }
+	    Line {
+	      SrcBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      SrcPort		      1
+	      DstBlock		      "Send\nnet_fdm Packet\nto FlightGear"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Ground10"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      45
+	    }
+	    Line {
+	      SrcBlock		      "Ground9"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      27
+	    }
+	    Line {
+	      SrcBlock		      "Ground27"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      33
+	    }
+	    Line {
+	      SrcBlock		      "Ground26"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      34
+	    }
+	    Line {
+	      SrcBlock		      "Ground29"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      29
+	    }
+	    Line {
+	      SrcBlock		      "Ground30"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      30
+	    }
+	    Line {
+	      SrcBlock		      "Ground31"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      28
+	    }
+	    Line {
+	      SrcBlock		      "Ground32"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      31
+	    }
+	    Line {
+	      SrcBlock		      "Ground33"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      49
+	    }
+	    Line {
+	      SrcBlock		      "Ground34"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      50
+	    }
+	    Line {
+	      SrcBlock		      "Ground35"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      52
+	    }
+	    Line {
+	      SrcBlock		      "Ground37"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      54
+	    }
+	    Line {
+	      SrcBlock		      "Ground38"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      55
+	    }
+	    Line {
+	      SrcBlock		      "Ground39"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      56
+	    }
+	    Line {
+	      SrcBlock		      "Ground40"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      25
+	    }
+	    Line {
+	      SrcBlock		      "Ground45"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      13
+	    }
+	    Line {
+	      SrcBlock		      "Ground47"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      12
+	    }
+	    Line {
+	      SrcBlock		      "Ground48"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      11
+	    }
+	    Line {
+	      SrcBlock		      "Ground49"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      10
+	    }
+	    Line {
+	      SrcBlock		      "Ground50"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      9
+	    }
+	    Line {
+	      SrcBlock		      "phi"
+	      SrcPort		      1
+	      DstBlock		      "cast1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "psi"
+	      SrcPort		      1
+	      DstBlock		      "cast3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "cast1"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "cast2"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "cast3"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "theta"
+	      SrcPort		      1
+	      DstBlock		      "cast2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "z"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "y"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "x"
+	      SrcPort		      1
+	      DstBlock		      "Pack\nnet_fdm Packet\nfor FlightGear"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  4
+	  DstBlock		  "toFlightGear"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  5
+	  DstBlock		  "toFlightGear"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  6
+	  DstBlock		  "toFlightGear"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "FlightGear Data"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "toFlightGear"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "toFlightGear"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  DstBlock		  "toFlightGear"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "From\nWorkspace"
+      SID		      "86"
+      Position		      [15, 65, 110, 95]
+      ZOrder		      -10
+      VariableName	      "delta_and_eulr"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Line {
+      SrcBlock		      "From\nWorkspace"
+      SrcPort		      1
+      DstBlock		      "Flight Gear"
+      DstPort		      1
+    }
+  }
+}
